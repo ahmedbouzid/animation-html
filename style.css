@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgb(158, 41, 158) , rgb(0, 0, 0));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    width: 90%;
+    z-index: 22;
+}
+
+header .logo {
+font-size: 28px;
+text-transform: uppercase;
+position: absolute;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+    
+}
+header ul li {
+    margin-right: 20px;
+}
+header ul li a {
+    padding: 6px 15px;
+}
+
+header ul li a:hover , .active{
+    color:rgb(95, 1, 95);
+    background-color: white;
+    border-radius: 20px;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.main::after {
+    content : '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top ,rgb(165, 51, 165),transparent);
+}
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(100px);
+}
+.ahmed{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transform: translateY(-140px);
+}
+.content {
+    color: white;
+    padding: 30px;
+}
+.content h2 {
+    margin: 20px;
+    font-size: 18px;
+}
+.content p{
+margin:20px ;
+}
